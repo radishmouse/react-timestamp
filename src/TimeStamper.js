@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
 
+import StamperButton from './StamperButton';
+import StampList from './StampList';
+
 class TimeStamper extends Component {
     constructor(props) {
         super(props);
@@ -15,19 +18,17 @@ class TimeStamper extends Component {
     render() {
         return (
             <div>                
-                <button onClick={this._handleClick}>crick</button>
-                <ul>
-                    {this.state.dates.map(d => {
-                        return (
-                            <li>{d.toLocaleString()}</li>
-                        )
-                    })}
-                </ul>
+                <StamperButton 
+                    handleClick={this._addDate}
+                />
+                <StampList
+                    dateList={this.state.dates}
+                />
             </div>
         );
     }
 
-    _handleClick = (e) => {
+    _addDate = (e) => {
         // Create a variable that holds a Date object with the current date/time
         const now = new Date();
 

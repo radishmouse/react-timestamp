@@ -12,3 +12,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.main-component {
+  outline: 5px solid black;
+  width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.my-button {
+  outline: 5px solid red;
+  margin: 15px;
+}
+
+.date-list {
+  outline: 5px solid orange;
+  margin: 15px;
+}

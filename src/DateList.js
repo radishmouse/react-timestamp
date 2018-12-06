@@ -14,6 +14,7 @@ function convertDatesToItems(someDates) {
 }
 
 const DateList = (props) => {
+    console.log('I am DateList and I am rendering');
     return (
         <ul className="date-list">
           {convertDatesToItems(props.listOfDates)}
